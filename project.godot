@@ -17,8 +17,9 @@ config/icon="res://src/icon.svg"
 
 [autoload]
 
-TransitionManager="*res://addons/shaker/components/ui/transition_manager/TransitionManager.tscn"
+TransitionManager="*res://addons/shaker/components/ui/transition_manager/transition_manager.tscn"
 UIManager="*res://addons/shaker/components/ui/ui_manager/ui_manager.tscn"
+PauseManager="*res://addons/shaker/components/core/pause_manager/pause_manager.tscn"
 
 [editor_plugins]
 
