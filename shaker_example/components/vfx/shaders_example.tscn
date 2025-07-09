@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqhqpdwq6n82"]
+
+[ext_resource type="Shader" uid="uid://b02bw466pwk5a" path="res://addons/shaker/components/vfx/shaders/outline.gdshader" id="1_3a7qo"]
+[ext_resource type="Texture2D" uid="uid://chd3180joggfl" path="res://shaker_example/assets/globs_no_outline.png" id="1_hge2o"]
+[ext_resource type="Shader" uid="uid://birv8v71nvo3v" path="res://addons/shaker/components/vfx/shaders/fill_color.gdshader" id="3_hppum"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hppum"]
+shader = ExtResource("1_3a7qo")
+shader_parameter/color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3a7qo"]
+shader = ExtResource("3_hppum")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/force = 1.0
+
+[node name="ShadersExample" type="Node2D"]
+
+[node name="GlobsNoOutline" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_hppum")
+position = Vector2(88, 88)
+scale = Vector2(9, 9)
+texture = ExtResource("1_hge2o")
+
+[node name="GlobsNoOutline2" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_3a7qo")
+position = Vector2(264, 88)
+scale = Vector2(9, 9)
+texture = ExtResource("1_hge2o")
