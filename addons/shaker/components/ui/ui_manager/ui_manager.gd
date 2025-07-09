@@ -1,5 +1,5 @@
+## GLOBAL UI Manager
 extends Node
-class_name UIManager
 
 @export var first_unclosable : bool = false
 
@@ -47,3 +47,9 @@ func close_ui() -> void:
 
 		var current_focus = _focus_stack.back()
 		current_focus.grab_focus()
+
+func close_all() -> void:
+	var minimum_size = 1 if first_unclosable else 0
+
+	while _stack.size() > minimum_size:
+		close_ui()

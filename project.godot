@@ -11,17 +11,18 @@ config_version=5
 [application]
 
 config/name="nineclied gamejam"
-run/main_scene="uid://bc0b17rbe8qdl"
+run/main_scene="uid://cjofe1kwsfy28"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://src/icon.svg"
 
 [autoload]
 
 TransitionManager="*res://addons/shaker/components/ui/transition_manager/TransitionManager.tscn"
+UIManager="*res://addons/shaker/components/ui/ui_manager/ui_manager.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ninesliced_kit/plugin.cfg")
+enabled=PackedStringArray("res://addons/ninesliced_kit/plugin.cfg", "res://addons/shaker/plugin.cfg")
 
 [file_customization]
 
@@ -31,7 +32,12 @@ folder_colors={
 "res://addons/shaker/components/core/": "purple",
 "res://addons/shaker/components/gameplay/": "orange",
 "res://addons/shaker/components/ui/": "teal",
-"res://addons/shaker/components/vfx/": "pink"
+"res://addons/shaker/components/vfx/": "pink",
+"res://shaker_example/components/": "gray",
+"res://shaker_example/components/core/": "purple",
+"res://shaker_example/components/gameplay/": "orange",
+"res://shaker_example/components/ui/": "green",
+"res://shaker_example/components/vfx/": "pink"
 }
 
 [rendering]

@@ -18,7 +18,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_68n33"]
-resource_name = "transition"
+resource_name = "fade"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -35,7 +35,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j74jm"]
 _data = {
 &"RESET": SubResource("Animation_j74jm"),
-&"transition": SubResource("Animation_68n33")
+&"fade": SubResource("Animation_68n33")
 }
 
 [node name="TransitionManager" type="CanvasLayer"]
