@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="nineclied gamejam"
+config/name="Shaker plugin"
 run/main_scene="uid://cjofe1kwsfy28"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://src/icon.svg"
@@ -23,7 +23,7 @@ PauseManager="*res://addons/shaker/components/core/pause_manager/pause_manager.t
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ninesliced_kit/plugin.cfg", "res://addons/shaker/plugin.cfg")
+enabled=PackedStringArray("res://addons/shaker/plugin.cfg")
 
 [file_customization]
 
